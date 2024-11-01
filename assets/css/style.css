@@ -331,23 +331,21 @@ main {
 
 .sidebar {
   margin-bottom: 15px;
-  /* max-height: 112px; */
+  max-height: 112px;
   overflow: hidden;
   transition: var(--transition-2);
 }
 
 .sidebar.active {
-  max-height: none;
+  max-height: 405px;
 }
 
 .sidebar-info {
   position: relative;
   display: flex;
-  flex-direction: column; /* Agar elemen disusun vertikal */
-  justify-content: center;
-  align-items: center; /* Menyelaraskan konten di tengah */
-  text-align: center;
-  gap: 10px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
 }
 
 .avatar-box {
@@ -355,28 +353,12 @@ main {
   border-radius: 20px;
 }
 
-.info-content {
-  display: flex;
-
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-  overflow: hidden; /* Menghindari elemen keluar dari kontainer */
-}
-
 .info-content .name {
   color: var(--white-2);
-  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-size: var(--fs-3);
   font-weight: var(--fw-500);
   letter-spacing: -0.25px;
   margin-bottom: 10px;
-  white-space: normal;
-  word-break: break-word;
-  line-height: 1.2;
-  display: block; /* Memastikan teks turun jika tidak muat */
-  max-width: 100%;
-  text-align: center;
 }
 
 .info-content .title {
